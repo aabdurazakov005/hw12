@@ -7,6 +7,6 @@ public class Main {
         Book java = new Book("Java. Руководство для начинающих", shiltd, 2002);
 
         drow.setYear(1991);
-        System.out.println("drow.getYear() = " + drow.getYear());
+        System.out.println("Книга: " + drow.getName() + " " + "Автор: " + drow.getAuthor().getFirstName() + " " + drow.getAuthor().getSecondName() + " Год выпуска: " + drow.getYear());
     }
 }
