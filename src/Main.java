@@ -1,5 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Author salvatore = new Author("Robert", "Salvatore");
+        Author shiltd = new Author("Gerbert", "Shieldt");
+
+        Book drow = new Book("Изгнанник", salvatore, 1990);
+        Book java = new Book("Java. Руководство для начинающих", shiltd, 2002);
+
+        drow.setYear(1991);
+        System.out.println("drow.getYear() = " + drow.getYear());
     }
 }
